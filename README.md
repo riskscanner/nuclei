@@ -28,7 +28,7 @@
 
 ---
 
-Nuclei可以基于模板来跨目标发送请求，能够实现零误报，并且可以帮助研究人员对已知路径执行有效的扫描。Nuclei的主要使用场景为网络侦察的初始阶段，可以帮助研究人员快速检查已知且易于探测的目标中是否存在安全漏洞。该工具使用了retryablehttp-go库来处理各种错误，并在Web应用防火墙屏蔽的情况下进行自动重传，这也是该工具的核心模块之一。
+基于模板的 nuclei 被用来发送请求给目标，有着实现零误报的优点，并且可以对已知的路径进行有效的扫描。nuclei 的主要用于在初期的探测阶段快速地对已知的且易于检测的漏洞或者 CVE 进行扫描。如果存在 WAF 的话，nuclei 使用 retryablehttp-go 库来处理各种错误，并且重新尝试攻击
 
 We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 100** security researchers and engineers. It is preloaded with ready to use templates using `-update-templates` flag.
 
