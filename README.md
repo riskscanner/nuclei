@@ -28,7 +28,7 @@
 
 ---
 
-Nuclei is used to send requests across targets based on a template leading to zero false positives and providing fast scanning on large number of hosts. Nuclei offers scanning for a variety of protocols including TCP, DNS, HTTP, File, etc. With powerful and flexible templating, all kinds of security checks can be modelled with Nuclei.
+Nuclei可以基于模板来跨目标发送请求，能够实现零误报，并且可以帮助研究人员对已知路径执行有效的扫描。Nuclei的主要使用场景为网络侦察的初始阶段，可以帮助研究人员快速检查已知且易于探测的目标中是否存在安全漏洞。该工具使用了retryablehttp-go库来处理各种错误，并在Web应用防火墙屏蔽的情况下进行自动重传，这也是该工具的核心模块之一。
 
 We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 100** security researchers and engineers. It is preloaded with ready to use templates using `-update-templates` flag.
 
