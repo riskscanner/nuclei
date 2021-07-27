@@ -28,6 +28,8 @@
 
 ---
 
+Nuclei是一个基于模板的、可配置攻击目标的扫描快速工具，同时还提供了强大的可扩展性和易用性。
+
 基于模板的 nuclei 被用来发送请求给目标，有着实现零误报的优点，并且可以对已知的路径进行有效的扫描。nuclei 的主要用于在初期的探测阶段快速地对已知的且易于检测的漏洞或者 CVE 进行扫描。如果存在 WAF 的话，nuclei 使用 retryablehttp-go 库来处理各种错误，并且重新尝试攻击
 
 We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 100** security researchers and engineers. It is preloaded with ready to use templates using `-update-templates` flag.
